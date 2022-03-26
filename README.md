@@ -21,7 +21,7 @@ Mas JS também executa códigos de forma assíncrona.
 O setTimeout(() => {}, miliseconds) é um exemplo de função assíncrona
 , por exemplo, e só executa a função depois da quantidade de milissegundos que especificarmos nele, mas não trava a execução do código subsequente. (veja o arquivo assincrono.js)
 
-`Uma das píncipais característica do código assíncrono é que ele pode iniciar um processo agora e finalizar posteriormente, sem interromper o fluxo de execussões.`
+`Uma das píncipais característica do código assíncrono é que ele pode iniciar um processo agora e finalizar posteriormente, sem interromper o fluxo de execuções.`
 
 Um outro exemplo de código assíncrono é uma requisição (`Requests`). Você quer pegar alguns dados, por exemplo, usando uma API do YouTube. Para isso você precisará fazer uma request, que é assíncrono, pois essa operação será passada para uma thread separada, e o código que você escreveu continuará executando as próximas funções que ele tem que executar.
 
