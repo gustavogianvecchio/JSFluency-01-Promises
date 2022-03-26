@@ -27,7 +27,7 @@ Um outro exemplo de código assíncrono é uma requisição (`Requests`). Você 
 
 ### Mas o JS não é síncrono e executado em uma única thread?
 
-Todo o restante do código continuará sendo executado sincronamente, mas Requests são entregues para uma thread separada que é executada fora da thread do JS.
+Todo o restante do código continuará sendo executado sincronamente, mas Requests são entregues para uma thread separada que é executada fora da mainThread do JS.
 
 - Assíncrono:
     - executa a sequência do código | quando encontra um request, envia para uma thread separada fora da mainThread do JS, que buscará os dados | continua executando a sequência do código na mainThread do JS | e quando os dados são obtidos, a função de callback do request é adicionada no final da fila de funções
