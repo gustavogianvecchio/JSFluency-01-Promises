@@ -2,7 +2,7 @@
 
 ## Estudo de JavaScript Puro: Promises - Uma introdução prática e compreensiva
 
-Uma `promise` é um objeto que representa o sucesso ou a falha de uma operação assíncrona.
+Uma `Promise` é um objeto que representa o sucesso ou a falha de uma operação assíncrona.
 
 E o que isso quer dizer:
 
@@ -30,20 +30,20 @@ Um outro exemplo de código assíncrono é uma requisição (`Requests`). Você 
 Todo o restante do código continuará sendo executado sincronamente, mas Requests são entregues para uma thread separada que é executada fora da mainThread do JS.
 
 - Assíncrono:
-    - executa a sequência do código | quando encontra um request, envia para uma thread separada fora da mainThread do JS, que buscará os dados | continua executando a sequência do código na mainThread do JS | e quando os dados são obtidos, a função de callback do request é adicionada no final da fila de funções
+    - executa a sequência do código | quando encontra uma request, envia para uma thread separada fora da mainThread do JS, que buscará os dados | continua executando a sequência do código na mainThread do JS | e quando os dados são obtidos, a função de callback do request é adicionada no final da fila de funções
 
 - Síncrono:
-    - executa a sequência do código | quando encontra um request síncrono, aguarda esses dados serem encontrados e a resposta do request ser obtida, bloqueando a sequência do código, que só continuará quando o request for resolvido.
+    - executa a sequência do código | quando encontra uma request síncrono, aguarda esses dados serem encontrados e a resposta do request ser obtida, bloqueando a sequência do código, que só continuará quando o request for resolvido.
 
-Agora que já sabemos o que é uma operação assíncrono, vamos falar de `PROMISES`, porque uma promisse pode envolver/encapsular operações assíncronas.
+Agora que já sabemos o que é uma operação assíncrona, vamos falar de `PROMISES`, porque uma Promisse pode envolver/encapsular operações assíncronas.
 
-As três vantagens que merecem destaque ao usar promises são:
+As três vantagens que merecem destaque ao usar Promises são:
 
 - ganhamos mais controle e legibilidade no fluxo de lógicas assíncronas;
 - reduzimos o acoplamento entre funções de callback;
 - temos mais previsibilidade e detalhamento no tratamento de erros.
 
-### Como criamos uma promise?
+### Como criamos uma Promise?
 
-Na maioria da vezes vamos consumir uma promise já criada por alguém ou por uma biblioteca de terceiro. Mas vamos ver no arquivo promise como isso funciona por "debaixo dos panos" (veja o arquivo promises.js).
+Na maioria da vezes vamos consumir uma Promise já criada por alguém ou por uma biblioteca de terceiro. Mas vamos ver no arquivo Promise como isso funciona por "debaixo dos panos" (veja o arquivo promises.js).
 
