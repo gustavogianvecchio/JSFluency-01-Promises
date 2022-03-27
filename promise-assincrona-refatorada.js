@@ -26,9 +26,11 @@ const validateHTTPStatus = dogData => {
     return dogData.json() 
 }
 
-/* ... então vamos desacoplar a SEGUNDA função responsavel por desestruturar as propriedades e pegarmos o que queremos, e atribuirmos à DOM passando os parâmetros do atributo que quero modificar e o valor da propriedade que quero inserir neste atributo ('src', message) - a chamaremos de... */
+/* ... então vamos desacoplar a SEGUNDA função responsavel por desestruturar as propriedades e pegarmos o que queremos, e atribuirmos à 
+DOM passando os parâmetros do atributo que quero modificar e o valor da propriedade que quero inserir neste atributo ('src', message) - a chamaremos de... */
 
-const setDogImage = ({ message: url }) => { /* aqui para deixar mais legível vamos nomear a propriedade como url e ajustar o segundo parâmetro do dogImg.setAttribute() abaixo. */
+const setDogImage = ({ message: url }) => { /* aqui para deixar mais legível vamos nomear a propriedade como url e 
+ajustar o segundo parâmetro do dogImg.setAttribute() abaixo. */
     dogImg.setAttribute('src', url)
 }
 
